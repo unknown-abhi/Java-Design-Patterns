@@ -8,5 +8,7 @@ public class MainApp {
 
         employee = EmployeeFactory.getEmployee(new PythonDevFactory());
         System.out.println(employee.writeCode());
+
+        //System.out.println(new JavaDevFactory().creatEmployee().writeCode());
     }
 }
