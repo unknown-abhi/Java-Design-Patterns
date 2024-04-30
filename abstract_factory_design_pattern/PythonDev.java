@@ -1,4 +1,4 @@
-package factory_method_design_pattern;
+package abstract_factory_design_pattern;
 
 public class PythonDev implements Employee {
 

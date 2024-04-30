@@ -4,9 +4,9 @@ public class MainApp {
     public static void main(String[] args) {
 
         Employee employee = EmployeeFactory.getEmployee("JavaDev");
-        employee.writeCode();
+        System.out.println(employee.writeCode());
 
         employee = EmployeeFactory.getEmployee("PythonDev");
-        employee.writeCode();
+        System.out.println(employee.writeCode());
     }
 }
