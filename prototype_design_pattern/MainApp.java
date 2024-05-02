@@ -14,7 +14,10 @@ public class MainApp {
 
         try {
             NetworkConnection netConnectionClone = (NetworkConnection) netConnection.clone();
-            System.out.println(netConnectionClone);
+
+            netConnection.getDomains().remove(0);
+            System.out.println(netConnection);
+            System.out.println("Clone : " + netConnectionClone);
         } catch (CloneNotSupportedException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
