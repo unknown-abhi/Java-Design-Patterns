@@ -13,8 +13,8 @@ public class MainApp {
 
         User user2 = User.InnerUserBuilder.userBuilder()
                 .setUserId(123)
-                .setUserName("Dev")
                 .setUserEmail("dev@dev.in")
+                .setUserName("Dev")
                 .buildUser();
 
         System.out.println(user2);
