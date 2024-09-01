@@ -5,6 +5,9 @@ public class Singleton {
 
     // constructor should be private
     private Singleton() {
+        if (instance != null) {
+            throw new IllegalStateException("Singleton instance already created");
+        }
     }
 
     public static Singleton getInstance() {
