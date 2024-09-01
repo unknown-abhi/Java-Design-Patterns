@@ -8,11 +8,14 @@ public class Singleton {
     }
 
     public static Singleton getInstance() {
-        if (instance == null) {
-            try {
-                instance = new Singleton();
-            } catch (Exception e) {
-                e.printStackTrace();
+        // Double Checked Locking
+        synchronized (Singleton.class) {
+            if (instance == null) {
+                try {
+                    instance = new Singleton();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
         }
         return instance;
