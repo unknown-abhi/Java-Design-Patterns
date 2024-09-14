@@ -6,15 +6,15 @@ public class SumDemo extends Thread {
     public void run() {
 
         synchronized (this) {
-            sum = 0;
+            this.sum = 0;
             for (int i = 0; i <= 10; i++) {
-                sum += i;
+                this.sum += i;
             }
             this.notify();
         }
     }
 
     public int getSum() {
-        return sum;
+        return this.sum;
     }
 }
