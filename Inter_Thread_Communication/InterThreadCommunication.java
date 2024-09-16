@@ -5,7 +5,7 @@ public class InterThreadCommunication {
         SumDemo th = new SumDemo();
         th.start();
 
-        synchronized (th) {
+        synchronized (th) { // Lock
             try {
                 th.wait();
                 // th.join();
