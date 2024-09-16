@@ -19,6 +19,8 @@ public class CallableAndFutureDemo {
         // Submit the Callable task to the ExecutorService
         Future<String> future = executor.submit(callable);
 
+        System.out.println("Processing something else while callable is getting executed in parallel");
+
         // Retrieve the result from the Future object
         try {
             System.out.println("Result from Callable: " + future.get());
