@@ -21,6 +21,7 @@ public class CallableAndFutureDemo {
 
         // Perform other tasks while callable is getting executed in parallel
         System.out.println("Processing something else while callable is getting executed in parallel");
+        // Task is submitted, main thread continues...
 
         // Retrieve the result from the Future object
         try {
