@@ -8,7 +8,7 @@ import java.util.concurrent.Future;
 public class CallableAndFutureDemo {
     public static void main(String[] args) {
         // Create a Callable task
-        ExecutorService executor = Executors.newCachedThreadPool();
+        ExecutorService executor = Executors.newFixedThreadPool(2);
 
         Callable<String> callable = () -> {
 
@@ -26,6 +26,8 @@ public class CallableAndFutureDemo {
         // Retrieve the result from the Future object
         try {
             System.out.println("Result from Callable: " + future.get());
+            // System.out.println(executor.submit(callable).get()); Result return from ::
+            // pool-1-thread-2
         } catch (Exception e) {
             e.printStackTrace();
         }
