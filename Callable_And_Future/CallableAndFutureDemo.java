@@ -10,7 +10,7 @@ public class CallableAndFutureDemo {
         // Create a Callable task
         ExecutorService executor = Executors.newFixedThreadPool(2);
 
-        Callable<String> callable = () -> {
+        Callable<String> callable = () ->  {
 
             Thread.sleep(5000);
             return "Result return from :: " + Thread.currentThread().getName();
