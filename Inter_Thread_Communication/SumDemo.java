@@ -10,7 +10,7 @@ public class SumDemo extends Thread {
             for (int i = 0; i <= 10; i++) {
                 this.sum += i;
             }
-            notify();
+            this.notify();
         }
     }
 
