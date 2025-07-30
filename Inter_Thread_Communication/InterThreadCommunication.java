@@ -35,4 +35,7 @@ public class InterThreadCommunication {
  * notify() or notifyAll() on the same object.
  * - notify(): Wakes up a single thread that is waiting on the object's monitor.
  * - Synchronization is required to call wait()/notify() on an object.
+ * 
+ * - Use join() for simple waiting until a thread finishes.
+ * - Use wait()/notify() for custom thread communication or coordination.
  */
