@@ -1,5 +1,13 @@
 
-
+/**
+ * Demonstration of the Specification design pattern.
+ *
+ * Constructs a composite specification by combining simple specifications
+ * with and and evaluates the rule for a sample product.
+ * 
+ * This pattern comes from Domain-Driven Design by Eric Evans and is useful for
+ * encapsulating complex business rules in a reusable and composable way.
+ */
 public class Main {
 
     public static void main(String[] args) {
