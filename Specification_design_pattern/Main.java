@@ -18,6 +18,11 @@ public class Main {
                 .and(new InStockSpec())
                 .and(new ElectronicsSpec());
 
+        // What you just achieved:
+        // Instead of writing:
+        /// if (price >= 1000 && inStock && category.equals("ELECTRONICS"))
+        // you encapsulated each condition as a Specification and composed them.
+
         if (discountRule.isSatisfiedBy(laptop)) {
             System.out.println("Discount allowed");
         } else {
