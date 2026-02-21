@@ -12,7 +12,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Product laptop = new Product("Laptop", 50000, true, "ELECTRONICS");
+        Product laptop = new Product("Laptop", 5000, true, "ELECTRONICS");
 
         Specification<Product> discountRule = new MinPriceSpec()
                 .and(new InStockSpec())
