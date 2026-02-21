@@ -35,8 +35,8 @@ public class User {
         private String userName;
         private String userEmail;
 
-        public InnerUserBuilder() {
-        }
+        // public InnerUserBuilder() {
+        // }
 
         public static InnerUserBuilder userBuilder() {
             return new InnerUserBuilder();
