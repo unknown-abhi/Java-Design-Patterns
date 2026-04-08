@@ -6,63 +6,43 @@ public class User {
     private final String userName;
     private final String userEmail;
 
-    private User(InnerUserBuilder builder) {
+    private User(Builder builder) {
         this.userId = builder.userId;
         this.userName = builder.userName;
         this.userEmail = builder.userEmail;
     }
 
-    public int getUserId() {
-        return userId;
-    }
-
-    public String getUserName() {
-        return userName;
-    }
-
-    public String getUserEmail() {
-        return userEmail;
-    }
-
     @Override
     public String toString() {
-        return "User [userId=" + this.userId + ", userName=" + this.userName + ", userEmail=" + this.userEmail + "]";
+        return "User [userId=" + userId + ", userName=" + userName + ", userEmail=" + userEmail + "]";
     }
 
-    // inner class to create object
-    static class InnerUserBuilder {
+    public static class Builder {
         private int userId;
         private String userName;
         private String userEmail;
 
-        // public InnerUserBuilder() {
-        // }
-
-        public static InnerUserBuilder userBuilder() {
-            return new InnerUserBuilder();
+        public static Builder useBuilder() {
+            return new Builder();
         }
 
-        // setters
-        public InnerUserBuilder setUserId(int userId) {
+        public Builder userId(int userId) {
             this.userId = userId;
             return this;
         }
 
-        public InnerUserBuilder setUserName(String userName) {
+        public Builder userName(String userName) {
             this.userName = userName;
             return this;
         }
 
-        public InnerUserBuilder setUserEmail(String userEmail) {
+        public Builder userEmail(String userEmail) {
             this.userEmail = userEmail;
             return this;
         }
 
-        public User buildUser() {
-            User user = new User(this);
-            return user;
+        public User build() {
+            return new User(this);
         }
-
     }
-
 }
