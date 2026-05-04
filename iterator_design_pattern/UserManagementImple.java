@@ -3,6 +3,9 @@ package iterator_design_pattern;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Concrete iterator implementation for the user list.
+ */
 public class UserManagementImple implements Iterator {
 
     private List<User> list;

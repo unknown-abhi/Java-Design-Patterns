@@ -1,5 +1,9 @@
 package builder_design_pattern;
 
+/**
+ * Demonstrates the Builder pattern for constructing User objects with fluent
+ * API.
+ */
 public class MainApp {
     public static void main(String[] args) {
 

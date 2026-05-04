@@ -1,5 +1,8 @@
 package observer_design_pattern;
 
+/**
+ * Subject interface for managing observers and broadcasting updates.
+ */
 public interface Subject {
 
     public void subscribe(Observer o);

@@ -2,6 +2,9 @@ package iterator_design_pattern;
 
 import java.util.ArrayList;
 
+/**
+ * Aggregate class that provides an iterator over User objects.
+ */
 public class UserManagement {
 
     private ArrayList<User> usersList = new ArrayList<>();

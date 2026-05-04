@@ -1,5 +1,8 @@
 package builder_design_pattern;
 
+/**
+ * Immutable User model built via the nested Builder class.
+ */
 public class User {
 
     private final int userId;

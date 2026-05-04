@@ -1,5 +1,8 @@
 package adapter_design_pattern;
 
+/**
+ * Adapter that wraps an Android charger into the IphoneAdapter interface.
+ */
 public class AdapterCharger implements IphoneAdapter {
 
     private AndroidAdapter androidAdapter;

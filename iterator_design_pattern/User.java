@@ -1,5 +1,8 @@
 package iterator_design_pattern;
 
+/**
+ * Simple User value object used by the iterator example.
+ */
 public class User {
 
     private String userId;

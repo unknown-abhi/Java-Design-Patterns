@@ -2,6 +2,9 @@ package observer_design_pattern;
 
 import java.util.Scanner;
 
+/**
+ * Demonstrates the Observer pattern with a YouTube channel and subscribers.
+ */
 public class MainApp {
     public static void main(String[] args) {
 

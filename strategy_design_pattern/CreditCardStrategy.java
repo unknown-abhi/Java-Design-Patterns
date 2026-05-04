@@ -1,5 +1,8 @@
 package strategy_design_pattern;
 
+/**
+ * Concrete Strategy for credit card payments.
+ */
 public class CreditCardStrategy implements PaymentStrategy {
 
     @Override

@@ -2,6 +2,9 @@ package observer_design_pattern;
 
 import java.util.Objects;
 
+/**
+ * Concrete observer representing a subscriber to channel updates.
+ */
 public class Subscriber implements Observer {
 
     private String userName;

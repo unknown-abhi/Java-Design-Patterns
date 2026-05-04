@@ -3,6 +3,9 @@ package observer_design_pattern;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Concrete subject representing a YouTube channel.
+ */
 public class YoutubeChannel implements Subject {
 
     private final List<Observer> subscribers = new ArrayList<>();

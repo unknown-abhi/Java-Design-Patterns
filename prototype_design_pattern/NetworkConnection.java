@@ -3,6 +3,9 @@ package prototype_design_pattern;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Prototype object that supports cloning to avoid costly setup.
+ */
 public class NetworkConnection implements Cloneable {
 
     private String ipAddress;

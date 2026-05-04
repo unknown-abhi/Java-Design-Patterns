@@ -1,5 +1,8 @@
 package strategy_design_pattern;
 
+/**
+ * Concrete Strategy for PayPal payments.
+ */
 public class PayPalStrategy implements PaymentStrategy {
 
     @Override

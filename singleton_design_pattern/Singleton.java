@@ -1,5 +1,8 @@
 package singleton_design_pattern;
 
+/**
+ * Singleton implementation that ensures only one instance exists.
+ */
 public class Singleton {
     private static Singleton instance;
 

@@ -1,5 +1,8 @@
 package iterator_design_pattern;
 
+/**
+ * Demonstrates the Iterator pattern over a collection of User objects.
+ */
 public class MainApp {
 
     public static void main(String[] args) {
@@ -17,4 +20,4 @@ public class MainApp {
         }
     }
 
-} 
+}
